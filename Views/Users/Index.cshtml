@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container-fluid" style="width:50%;">
+
+    <!-- Login Panel -->
+    <div class="card">
+
+        <!-- Panel Header -->
+        <div class="card-header">
+            Login
+        </div>
+
+        <!-- Panel Body -->
+        <div class="card-body">
+            
+                <!-- Start Form -->
+                <form class="needs-validation" asp-controller="Users" asp-action="Index"  novalidate>
+
+                    <!-- User Name -->
+                    <div class="row">
+                        <label for="UserName" class="form-label"><strong>User Name:</strong></label>
+                        <div class="col-md">
+                            <input type="text" class="form-control" Name="UserName" id="UserName" placeholder="User Name" value="" required>                                
+                            <div class="invalid-feedback">Please enter username!</div>
+                        </div>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="row">
+                        <label for="Password" class="form-label"><strong>Password:</strong></label>
+                        <div class="col-md">
+                            <input type="password" class="form-control" name="Password" id="Password" placeholder="Password" value="" required>                                
+                            <div class="invalid-feedback">Please enter Password!</div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <br/>
+                    <div class="row">
+                        <div class="col text-center" style="text-align:center;">
+                            <button class="btn-primary btn" id="Ship">Login</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- End Form -->            
+
+        </div>
+    </div>
+</div>
+
